@@ -8,5 +8,12 @@
 	"id": "omgrod.modbadgesplus",
 	"name": "ModBadgesPlus",
 	"developer": "OmgRod",
-	"description": "Adds extra mod badges"
+	"description": "Adds extra mod badges",
+	"resources": {
+		"sprites": [
+			"resources/modBadge_01_002.png",
+			"resources/modBadge_02_002.png",
+			"resources/modBadge_03_002.png"
+		]
+	}
 }
