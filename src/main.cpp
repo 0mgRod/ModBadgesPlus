@@ -75,8 +75,10 @@ class $modify(MyProfilePage, ProfilePage) {
 							// Depending on the value of creatorPoints, create the appropriate modBadge
 							if (badgeIntValue == 100) {
 								auto modBadge = CCSprite::create("modBadge_01_002.png"_spr);
-								modBadge->setPositionY(username->getPositionY());
-								modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2) - 10.f);
+								// modBadge->setPositionY(username->getPositionY());
+								// modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2));
+
+								modBadge->setPosition(nodelolas->getChildByID("mod-badge")->getPosition());
 
 								nodelolas->removeChildByID("mod-badge");
 
@@ -87,8 +89,10 @@ class $modify(MyProfilePage, ProfilePage) {
 								std::cout << "Loaded mod badge -1" << std::endl;
 							} else if (badgeIntValue == 101) {
 								auto modBadge = CCSprite::create("modBadge_02_002.png"_spr);
-								modBadge->setPositionY(username->getPositionY());
-								modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2) - 10.f);
+								// modBadge->setPositionY(username->getPositionY());
+								// modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2));
+
+								modBadge->setPosition(nodelolas->getChildByID("mod-badge")->getPosition());
 
 								nodelolas->removeChildByID("mod-badge");
 
@@ -99,8 +103,10 @@ class $modify(MyProfilePage, ProfilePage) {
 								std::cout << "Loaded mod badge -2" << std::endl;
 							} else if (badgeIntValue == 102) {
 								auto modBadge = CCSprite::create("modBadge_03_002.png"_spr);
-								modBadge->setPositionY(username->getPositionY());
-								modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2) - 10.f);
+								// modBadge->setPositionY(username->getPositionY());
+								// modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2));
+
+								modBadge->setPosition(nodelolas->getChildByID("mod-badge")->getPosition());
 
 								nodelolas->removeChildByID("mod-badge");
 
