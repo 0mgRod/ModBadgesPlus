@@ -1,23 +1,22 @@
 /*
 Code by OmgRod
-Thanks to iArtie on GitHub for the profile page modify code.
+Thanks to iArtie on GitHub for the profile page modify code
+And thanks to Xanii on GitHub for the comment cell modify code
 */
 
 #include <Geode/Geode.hpp>
 #include <Geode/modify/ProfilePage.hpp>
 #include <Geode/binding/ProfilePage.hpp>
 #include <Geode/utils/web.hpp>
-#include <chrono>
-#include <thread>
 
 using namespace geode::prelude;
 
 class $modify(MyProfilePage, ProfilePage) {
-	static void onModify(auto& self) {
-        self.setHookPriority("GJGarageLayer::init", -10000);
-    }
-
 	int accID;
+
+	static void onModify(auto& self) {
+        self.setHookPriority("ProfilePage::init", 3000);
+    }
 
 	bool init(int a1, bool a2) {
 		if(!ProfilePage::init(a1, a2)) return false;
@@ -78,9 +77,11 @@ class $modify(MyProfilePage, ProfilePage) {
 								// modBadge->setPositionY(username->getPositionY());
 								// modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2));
 
+								nodelolas->getChildByID("mod-badge")->setVisible(false);
+
 								modBadge->setPosition(nodelolas->getChildByID("mod-badge")->getPosition());
 
-								nodelolas->removeChildByID("mod-badge");
+								// nodelolas->removeChildByID("mod-badge");
 
 								nodelolas->addChild(modBadge);
 
@@ -92,9 +93,11 @@ class $modify(MyProfilePage, ProfilePage) {
 								// modBadge->setPositionY(username->getPositionY());
 								// modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2));
 
+								nodelolas->getChildByID("mod-badge")->setVisible(false);
+
 								modBadge->setPosition(nodelolas->getChildByID("mod-badge")->getPosition());
 
-								nodelolas->removeChildByID("mod-badge");
+								// nodelolas->removeChildByID("mod-badge");
 
 								nodelolas->addChild(modBadge);
 
@@ -106,9 +109,11 @@ class $modify(MyProfilePage, ProfilePage) {
 								// modBadge->setPositionY(username->getPositionY());
 								// modBadge->setPositionX(username->getPositionX() - (username->getContentWidth() / 2));
 
+								nodelolas->getChildByID("mod-badge")->setVisible(false);
+
 								modBadge->setPosition(nodelolas->getChildByID("mod-badge")->getPosition());
 
-								nodelolas->removeChildByID("mod-badge");
+								// nodelolas->removeChildByID("mod-badge");
 
 								nodelolas->addChild(modBadge);
 

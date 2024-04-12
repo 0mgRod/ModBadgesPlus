@@ -8,6 +8,7 @@ project(ModBadgesPlus VERSION 1.0.0)
 
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
+    CommentCell/main.cpp
     # Add your cpp files here
 )
 
